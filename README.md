@@ -2,17 +2,17 @@
 Abstraction of a Unit, includes convertions and basic operations. 
 
 ------ EXAMPLE : Free Fall (No air resistance) -------
-
+```
 from units_test import Unit, Constants
 
-g = Constants.g \n
-velocity = Unit(1, "km.s^-1") \n 
-time = Unit(2, "min") \n
-distance = - g*time**2*(1/2) + velocity*time  \n
+g = Constants.g
+velocity = Unit(1, "km.s^-1")
+time = Unit(2, "min")
+distance = - g*time**2*(1/2) + velocity*time  
 
 print( distance )                    # Unit( 4.93680e+04 m )  
 print( distance.to("mi").text() )    # 105.24040 mi
-
+```
 --------------------------------------------------------
 Notes:
  - When having a unit to the zero e.g. km^0 in an operation, it'll give a float, ussually
