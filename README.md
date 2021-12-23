@@ -1,5 +1,6 @@
 # Units
 Abstraction of a Unit, includes convertions and basic operations. 
+
 ------ EXAMPLE : Free Fall (No air resistance) -------
 
 from units_test import Unit, Constants
@@ -25,9 +26,7 @@ Limitations:
  - TODO : add computations of errors
  - TODO : implement nparrays that have the same fucntionality
 
-
 Instalation:
   Download the .py file and put it in ../Python38/Lib/site-packages, or just put it in
   the same folder your working, then you can import it no problem.
-
- 
+  I'm using python 3.8 but it should work on versions above. No dependencies (yet).
