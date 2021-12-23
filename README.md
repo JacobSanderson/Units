@@ -5,13 +5,13 @@ Abstraction of a Unit, includes convertions and basic operations.
 
 from units_test import Unit, Constants
 
-g = Constants.g 
-velocity = Unit(1, "km.s^-1") 
-time = Unit(2, "min") 
-distance = - g*time**2*(1/2) + velocity * time * 2  
+g = Constants.g \n
+velocity = Unit(1, "km.s^-1") \n 
+time = Unit(2, "min") \n
+distance = - g*time**2*(1/2) + velocity*time  \n
 
-print( distance )                   # Unit( 4.93680e+04 m )  
-print( distance.to("mi").text() )   # 30.67585 km 
+print( distance )                \t\t\t# Unit( 4.93680e+04 m )  
+print( distance.to("mi").text() )    \t# 105.24040 mi
 
 --------------------------------------------------------
 Notes:
